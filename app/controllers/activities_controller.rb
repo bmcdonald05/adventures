@@ -5,8 +5,8 @@ class ActivitiesController < ApplicationController
   # GET /activities.json
   def index
     @activities = Activity.all
+    @pictures = ["bike.jpeg", "hike.jpeg", "boat.jpeg", "museum.jpg"].shuffle!
   end
-
   # GET /activities/1
   # GET /activities/1.json
   def show

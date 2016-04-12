@@ -1,0 +1,10 @@
+<style>
+  body {
+    background: <%= @color %>;
+  }
+</style>
+
+<%= link_to "Red", contact_path(color: "red"), class: "btn btn-danger"%>
+<%= link_to "Blue", contact_path(color: "blue"), class: "btn btn-primary"%>
+<%= link_to "Green", contact_path(color: "green"), class: "btn btn-success"%>
+<%= link_to "Orange", contact_path(color: "orange"), class: "btn btn-warning"%>

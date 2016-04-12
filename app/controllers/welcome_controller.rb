@@ -4,4 +4,8 @@ class WelcomeController < ApplicationController
 
   def about
   end
+
+  def contact
+  	@color = params[:color]
+  end
 end
